@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robot Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🤖 Robotic Control Dashboard</h1>
+
+<div class="grid">
+
+    <div class="card">
+        <h2>Speed</h2>
+        <p id="speed">0</p>
+    </div>
+
+    <div class="card">
+        <h2>Battery</h2>
+        <p id="battery">100%</p>
+    </div>
+
+    <div class="card">
+        <h2>Temperature</h2>
+        <p id="temp">35°C</p>
+    </div>
+
+    <div class="card">
+        <h2>Status</h2>
+        <p id="status">Idle</p>
+    </div>
+
+</div>
+
+<div class="controls">
+    <button onclick="command('forward')">⬆ Forward</button>
+    <button onclick="command('backward')">⬇ Backward</button>
+    <button onclick="command('stop')">⛔ Stop</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
